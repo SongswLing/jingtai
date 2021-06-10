@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于</title>
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../css/min.css">
+    <link rel="shortcut icon" href="../images/icons/关于.ico" type="image/x-icon">
+    <script src="../js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../js/parallax.min.js"></script>
+    <style>
+        .von{
+            width: 100%;
+            height: 300px;
+            margin-top: 80px;
+            position: relative;
+        }
+        ul li:nth-of-type(1) img{
+            width: 100%;
+            height: 1600px;
+        }
+        ul li:nth-of-type(2) img{
+            width: 50%;
+            height: 310px;
+            margin: 220px 200px;
+            -moz-height: 350px;
+        }
+        ul li:nth-of-type(3) img{
+            width: 3.5%;
+            height: 38px;
+            margin: 330px 540px;
+        }
+        ul li:nth-of-type(4) img{
+            width: 5.5%;
+            height: 65px;
+            margin: 350px 600px;
+        }
+        ul li:nth-of-type(5) img{
+            width: 5.5%;
+            height: 75px;
+            margin: 320px 700px;
+        }
+        ul li:nth-of-type(6) img{
+            width: 3%;
+            height: 45px;
+            margin: 360px 785px;
+        }
+        ul li:nth-of-type(7) img{
+            width: 8%;
+            height: 150px;
+            margin: 250px 870px;
+        }
+        ul li:nth-of-type(8) img{
+            width: 10%;
+            height: 110px;
+            margin: 370px 1020px;
+        }
+        ul li:nth-of-type(9) img{
+            width: 4%;
+            height: 70px;
+            margin: 250px 1270px;
+        }
+        ul li:nth-of-type(10) img{
+            width: 2.5%;
+            height: 65px;
+            margin: 350px 1420px;
+        }
+        /* #header{
+          opacity: .9;
+        } */
+        footer{
+          position: fixed;
+          bottom: 0;
+          opacity: .6;
+        }
+        .boxs{
+          position: relative;
+        }
+        .formuser{
+            margin: -225px auto;
+            width: 40%;
+            height: 580px;
+            background-color: #6B849D;
+            box-shadow: 5px 5px 5px rgba(134, 131, 131, 0.411);
+            border-radius: 2%;
+            position: absolute;
+            left: 30%;
+            transition: all .5s ease-in-out 0s;
+            transform: rotateY(0deg);
+            opacity: .8;
+        }
+        .formuser h2{
+            text-align: center;
+            padding-top: 40px;
+        }
+        .iput{
+          height: 450px;
+          margin-top: -20px;
+          
+        }
+        .iput div{
+          margin: 40px auto;
+          width: 60%;
+        }
+        .iput div p{
+            display: inline;
+            font-size: 1.6em;
+            margin-left: 20px;
+        }
+        input{
+            border-radius: 5px;
+            margin-left:  10px;
+            height: 50px;
+            width: 70%;
+            font-size: 1.6em;
+            border: 1px solid rgb(110, 105, 105);
+        }
+        .btns{
+          margin: 0 auto;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .btns button{
+          width: 30%;
+          height: 50px;
+          border-radius: 10px;
+          font-size: 1.3em;
+          border: 1px solid rgb(110, 105, 105);
+        }
+        #hiddens{
+          width: 40%;
+          height: 580px;
+          background-color:#6B849D;
+          box-shadow: 5px 5px 5px rgba(134, 131, 131, 0.411);
+          border-radius: 2%;
+          text-align: center;
+          position: absolute;
+          left: 30%;
+          top: -225px;
+          transition: all .5s ease-in-out 0s;
+          opacity: 0.8;
+          transform: rotateY(90deg);
+        }
+        #hiddens h1{
+          margin-top: 280px;
+          margin-left: 22px;
+        }
+        #pasele{
+          border: 1px solid #000;
+          width: 18%;
+          height: 50px;
+          float: left;
+          position: absolute;
+          left: 41%;
+          top: 86.5%;
+          border-radius: 10px;
+          font-size: 2.5em;
+          border: 1px solid rgb(110, 105, 105);
+        }
+    </style>
+</head>
+<body>
+  <div class="von">
+    <ul id="huados" class="huados" data-relative-input="true" data-hover-only="true" data-calibrate-x="false"
+    data-calibrate-y="true"
+    data-invert-x="true"
+    data-invert-y="true"
+    data-limit-x="false"
+    data-limit-y="700"
+    data-scalar-x="300"
+    data-scalar-y="50"
+    data-friction-x="0.1"
+    data-friction-y="0.4">
+    <li class="layer" data-depth="0.00"><img src="../images/bgxk.png" ></li>
+    <li class="layer" data-depth="0.01"><img src="../images/about/son.png"></li>
+    <li class="layer" data-depth="0.03"><img src="../images/about/lt1.png"></li>
+    <li class="layer" data-depth="0.04"><img src="../images/about/lt2.png"></li>
+    <li class="layer" data-depth="0.05"><img src="../images/about/lt3.png"></li>
+    <li class="layer" data-depth="0.06"><img src="../images/about/lt4.png"></li>
+    <li class="layer" data-depth="0.07"><img src="../images/about/lt5.png"></li>
+    <li class="layer" data-depth="0.08"><img src="../images/about/lt6.png"></li>
+    <li class="layer" data-depth="0.09"><img src="../images/about/lt7.png"></li>
+    <li class="layer" data-depth="0.10"><img src="../images/about/lt8.png"></li>
+  </ul>
+</div>
+  <div class="boxs">
+    <nav id="header" class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                      <span class="sr-only">切换导航</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+            <a href="#" class="navbar-brand nav-title">Meditation <br>
+              <img src="../images/iocnimg.png" alt="" class="navbar-brand nav-title icons">
+            </a> 
+          </div>
+          <div class="collapse navbar-collapse" id="navbar-menu">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="cative"><a href="../index.html">首页</a></li>
+              <li class="cative"><a href="./booksGudaizh.html">图书</a></li>
+              <li class="cative"><a href="./musicjinzh.html">音乐</a></li>
+              <li class="cative"><a href="./moviejinzh.html">电影</a></li>
+              <li class="cative"><a href="#"  style="color: #fff;">关于</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <form action="" class="formuser">
+          <h2>联系我们</h2><br>
+          <div class="iput">
+              <div class="uesrname"><p> 姓名　: </p><input type="text"><br></div>
+              <div class="age"><p> 年龄　: </p><input type="text"><br></div>
+              <div class="likes"><p> 爱好　: </p><input type="text"><br></div>
+              <div class="email"><p> 邮箱　: </p><input type="text"><br></div>
+              <div class="btns"><button id="btnsfn">提交</button></div>   
+          </div>
+      </form> 
+      <div id="hiddens">
+        <h1>谢谢！</h1>
+        <button id="pasele">×</button>
+      </div>  
+  </div>
+  <footer>
+    <p>Copyright Song Shiwei group 2021　　</p>
+    <p>本网站所有资源均来自互联网 如有侵犯联系必删 </p>
+</footer>
+<script>
+  var huados = document.getElementById('huados');
+        var parallax = new Parallax(huados);
+</script>
+    <script>
+        $("#btnsfn").click(function(){
+          $(".formuser").css("transform","rotateY(-90deg)");
+          $("#hiddens").css("transform","rotateY(0deg)");
+          return false;
+        })
+        $("#pasele").click(function(){
+          $("#hiddens").css("transform","rotateY(90deg)");
+        })
+    </script>
+</body>
+</html>

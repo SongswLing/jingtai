@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>音乐</title>
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../css/min.css">
+    <link rel="stylesheet" href="../css/booksGudai.css">
+    <link rel="shortcut icon" href="../images/icons/书.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/ax.css">
+    <script src="../js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../js/APlayer.min.js"></script>
+    <script src="../js/ax.js"></script>
+    <script src="../js/block.js"></script>
+</head>
+<style type="text/css">
+*{
+  margin: 0;
+  padding: 0;
+}
+html,body{
+  background-color: #f5f6f7;
+}
+	.part{
+	    width: 50%;
+	    height: 300px;
+	    position: relative;
+	}
+	.partmain{
+	    width: 85%;
+	    height: 85%;
+      margin: 0 auto;
+      position: relative;
+	}
+	.partmain img{
+	    width: 100%;
+	    height: 100%;
+	    box-shadow: 5px 5px 2px rgba(83, 81, 81, 0.080);
+	    border-radius: 50%;
+		  transition: .8s;
+	}
+	.text img:nth-of-type(2){
+		transform: scale(0.68);
+	}
+	.maskzz{
+	    left: 286px;  
+	    width: 145%;
+  }
+  p{
+    padding: 0;
+  }
+  #player-mini{
+    position: absolute;
+    top: 95px;
+    left: 100px;
+    transform: scale(2.70);
+    border-radius: 50%;
+    width: 68px;
+  }
+  .aplayer-pic a{
+    margin: 0 1px;
+  }
+  .maskzy,.maskgz,.masklz,.maskey{
+    left: -452px;
+    width: 163.5%;
+  }
+  .maskzz,.maskmz,.maskxz,.maskwx{
+    width: 163.5%;
+    left: 283px;
+  }
+  .leftsilde{
+    margin-right: 26px;
+  }
+</style>
+<body>
+    <nav id="header" class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                      <span class="sr-only">切换导航</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+            <a href="#" class="navbar-brand nav-title">Meditation <br>
+              <img src="../images/iocnimg.png" alt="" class="navbar-brand nav-title icons">
+            </a> 
+          </div>
+          <div class="collapse navbar-collapse" id="navbar-menu">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="cative"><a href="../index.html">首页</a></li>
+              <li class="cative"><a href="./booksGudaizh.html">图书</a></li>
+              <li class="cative"><a href="#" style="color: #fff;">音乐</a></li>
+              <li class="cative"><a href="./moviejinzh.html">电影</a></li>
+              <li class="cative"><a href="./about.html">关于</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="banner" id="banner">
+          <img src="../images/music.jpg" alt="" style="width: 100%;height: 100%;">
+      </div>
+      <div class="warp">
+        <div class="left" id="left">
+          <div class="lists">
+            <ul class="menu">
+              <li>
+                <div>中国类</div>
+                <ul class="list">
+                  <li><a href="./musicjinzh.html"  class="tabss">近代</a></li>
+                  <li><a href="#" id="frist" class="tabss">现代</a></li>
+                  
+                </ul>
+              </li>
+              <li>
+                <div>外国类</div>
+                <ul class="list">
+                  <li><a href="./booksGudaien.html">近代</a></li>
+                  <li><a href="./booksXiandaien.html">现代</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="textline">
+            <div class="toptext">
+              <p>概述</p>
+            </div>
+            <div class="maintext">
+              <p>
+                　　中国古代文学史讲的是从上古一直到1919年五四运动以前中华民族文学发展的历史。中国古代文学是中华文明的重要组成部分，它的历史悠久，其起源，约略同中华文明的起源同步。漫长的历史上曾经产生出一代又一代的杰出作家和数不清的优秀作品，出现了多姿多彩的体裁、题材、风格、流派，形成了各种各样的文学现象、文学潮流和文学理论，内容极其丰富。这是一笔无比宝贵的文化遗产。在世界民族文学之林，我国古代文学以自己无比辉煌的成就和无比鲜明的独特风貌，占有重要的地位。
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="right" id="right_guzh">
+          <div class="boxsx">
+            <div class="part">
+              <div class="partmain text leftsilde">
+                
+                <img src="../images/音乐/音乐转盘.png" alt="" class="imgzz">
+                <div id="player-mini" class="ax-aplayer imgzz"></div>
+                <!-- <img src="images/gudaiimg/庄子.jpg" alt="" id="imgzz"> -->
+                
+                <div class="maskzz">
+                  <p>庄子（约公元前369年—约公元前286年），名周，战国时期宋国蒙人。战国中期思想家、哲学家、文学家，庄学的创立者，道家学派代表人物，与老子并称“老庄”。《庄子》又名《南华经》，是战国中期庄子及其后学所著道家经文。到了汉代以后，尊庄子为南华真人，因此《庄子》亦称《南华经》。其书与《老子》《周易》合称“三玄”。《庄子》一书主要反映了庄子的批判哲学、艺术、美学、审美观等。其内容丰富，博大精深，涉及哲学、人生、政治、社会、艺术、宇宙生成论等诸多方面。
+                    <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    《庄子》一书反映了庄子的批判哲学、艺术、美学、审美观、政治、社会等诸多方面。原有内篇七篇、外篇二十八、杂篇十四、解说三，五十二篇，十余万言。郭象删减后分内篇、外篇、杂篇三部分存三十三篇，大小寓言二百多个，六万五千九百二十字，其中，内篇七篇；外篇十五；杂篇十一。该书包罗万象，对宇宙生成论、人与自然的关系、生命价值、批判哲学等都有详尽的论述。《庄子》一书反映了庄子的批判哲学、艺术、美学、审美观、政治、社会等诸多方面。原有内篇七篇、外篇二十八、杂篇十四、解说三，五十二篇，十余万言。郭象删减后分内篇、外篇、杂篇三部分存三十三篇，大小寓言二百多个，六万五千九百二十字，其中，内篇七篇；外篇十五；杂篇十一。该书包罗万象，对宇宙生成论、人与自然的关系、生命价值、批判哲学等都有详尽的论述。
+                    
+                  </p>
+                </div>
+              </div>
+              
+            </div>
+            <div class="part">
+              <div class="partmain text">
+				  <img src="../images/音乐/音乐转盘.png" alt="" class="imgzy">
+                <img src="../images/gudaiimg/周易.jpg" alt="" id="imgzy" class="imgzy">
+                <div class="maskzy">
+                  <p>《周易》即《易经》，《三易》之一（另有观点：认为易经即三易，而非周易）,是传统经典之一，相传系周文王姬昌所作，内容包括《经》和《传》两个部分。《经》主要是六十四卦和三百八十四爻，卦和爻各有说明（卦辞、爻辞），作为占卜之用。《周易》没有提出阴阳与太极等概念，讲阴阳与太极的是被道家与阴阳家所影响的《易传》。《传》包含解释卦辞和爻辞的七种文辞共十篇，统称《十翼》，相传为孔子所撰。<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    春秋时期，官学开始逐渐演变为民间私学。易学前后相因，递变发展，百家之学兴，易学乃随之发生分化。自孔子赞易以后，《周易》被儒门奉为儒门圣典，六经之首。儒门之外，有两支易学与儒门易并列发展：一为旧势力仍存在的筮术易；另一为老子的道家易，易学开始分为三支。《周易》是中国本源传统文化的精髓，是中华民族智慧与文化的结晶，被誉为群经之首，大道之源，是中华文明的源头活水，是中国古代杰出的哲学巨著，历经七千多年的历史至今经久不衰，奠定了中华文化的重要价值取向，开创了东方文化的特色，对中国的文化产生不可取代的重要价值和巨大影响。
+                  </p>
+                </div>
+              </div>
+              
+            </div>
+            <div class="part">
+              <div class="partmain text leftsilde">
+				  <img src="../images/音乐/音乐转盘.png" alt="" class="imgmz">
+                <img src="../images/gudaiimg/墨子.jpg" alt="" id="imgmz" class="imgmz">
+                <div class="maskmz">
+                  <p>
+                    墨子（约前468-前376年），姓墨，名翟，战国初年学者、思想家，墨家学派创始人。墨子作为中国战国时期著名思想家、政治家、军事家、社会活动家和自然科学家，提出了“兼爱”“非攻”等观点，创立墨家学说，并有《墨子》一书传世。他主张“兼爱”﹑“非攻”，提出“尚贤”﹑“尚同”的政治思想。<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    该书提倡兼爱、非攻、尚贤、尚同、天志、明鬼、非命、非乐、节葬、节用，涉及哲学、逻辑学、军事学、工程学、力学、几何学、光学，先秦的科学技术成就大都依赖《墨子》以传。现存《墨子》一书，宋朝多散佚。至清代编《四库全书》时，仅存五十三篇。墨子在认识论方面提出了著名的"三表法"，他说："有本之者，有原之者，有用之者。于何本之？上本之于古者圣王之事。于何原之？下原察百姓耳目之实。于何用之？废以为刑政，观其中国家百姓人民之利。此所谓言有三表也。"（《墨子•非命上》）墨子还反对儒家鼓吹的"天命论"，他不相信"天命"的存在，他提倡"尚力"。在"名"、"实"关系上，墨家认为"名"必须服从"实"，没有"实"作基础，"名"就是虚假的。这些思想都具有唯物主义的性质。但是，墨子又相信"天志"，他认为天有意志，天能赏善罚恶，爱人憎人。他还论证了鬼神的客观存在，这就不免陷入了唯心主义的泥坑。这说明墨家的唯物论思想还有缺陷，还不彻底。
+
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="part">
+              <div class="partmain text">
+				  <img src="../images/音乐/音乐转盘.png" alt="" class="imggz">
+                <img src="../images/gudaiimg/鬼谷子.jpg" alt="" id="imggz" class="imggz">
+                <div class="maskgz">
+                  <p>
+                    鬼谷子，王氏，名诩，一作王禅，华夏族，籍贯存争议，有多地相争，诸子百家之纵横家创始人， 战国时代传奇人物。著名谋略家、纵横家的鼻祖，兵法集大成者、相传其额前四颗肉痣，成鬼宿之象。精通百家学问，因隐居在云梦山鬼谷，故自称鬼谷先生。常入山静修，深谙自然之规律，天道之奥妙。他被上天赐予通天彻地的智慧，一曰数学，日星象纬，在其掌中，占往察来，言无不验；二曰兵学，六韬三略，变化无穷，布阵行兵，变幻莫测，三曰言学，广记多闻，明理审势，出辞吐辩，万口莫当；四曰出世，修真养性，形神俱妙，超乎万有，体合自然。<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    《鬼谷子》主要内容是一部研究社会政治斗争谋略权术的书，它的中心思想就是指导纵横家如何通过权谋策略及言谈辩论等技巧，实现既定的目标。《鬼谷子》亦是先秦时期以纵横思想为主的纵横家、兵家、阴阳家、法家思想的集大成者，它与各家既有共同性，又有自己创特殊性。《鬼谷子》作为鬼谷子教徒授业的教材，培养出了苏秦、张仪等纵横家。春秋战国时，纵横家“一怒而诸侯惧，安居则天下熄”，章学诚在《文史通义》中感慨道：“战国者，纵横之世也！”纵横家们通过精湛的游说技巧，促进了社会的大一统和历史的前进发展。从这层意义上讲，《鬼谷子》是间接地参与了先秦政治舞台，客观上也促进了中国的统一进程，加速了社会前进的步伐。
+
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="part">
+              <div class="partmain text leftsilde">
+				  <img src="../images/音乐/音乐转盘.png" alt="" class="imgxz">
+                <img src="../images/gudaiimg/荀子.jpg" alt="" id="imgxz" class="imgxz">
+                <div class="maskxz">
+                  <p>
+                    荀子（约公元前313年－公元前238年），名况，字卿(一说时人相尊而号为卿)，战国末期赵国人，两汉时因避汉宣帝询名讳称“孙卿”，著名的思想家、哲学家、教育家，儒家学派的代表人物，先秦时代百家争鸣的集大成者。<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    荀子的“性恶论”是其最主要的思想主张之一。这一思想主要反映在《荀子•性恶》篇中，荀子认为：“人之性恶，其善者伪也。”荀子所说的“性”是指与生俱来、自然而成的“自然之性”或生理本能。“伪”不是“真伪”、“虚伪”的“伪”，而是“人为”之义。因此，荀子认为：“凡性者，天之就也，不可学，不可事。礼义者，圣人之所常生也，人之所学而能、所事而成者也。不可学、不可事而在人者，谓之性;可学而能、可事而成之在人者，谓之伪。是性、伪之分也。”(《荀子•性恶》)即礼义等善良的品性和德行是靠后天的人为的努力得来的，而不是天生就有的。<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp荀子的“天人论”主张“天行有常”、“人可制天命而用之”。这是荀子思想中最具积极进步意义的思想之一。我们仅举《天论》中一例加以说明。《天论》篇开头写到：“天行有常，不为尧存，不为桀亡。应之以治则吉，应之以乱则凶。强本而节用，则天不能贫;养备而动时，则天不能病;修道而不贰，则天不能祸。
+
+
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="part">
+              <div class="partmain text">
+				  <img src="../images/音乐/音乐转盘.png" alt="" class="imglz">
+                <img src="../images/gudaiimg/老子.jpg" alt="" id="imglz" class="imglz">
+                <div class="masklz">
+                  <p>
+                    老子（传说前600年左右—前470年左右），姓李名耳，字聃（音dan第一声），汉族，楚国苦县（今河南周口鹿邑县）人，是我国古代伟大的哲学家和思想家，道家学派创始人，世界文化名人。老子又名老聃，相传他一生下来就是白眉毛白胡子，所以被称为老子。<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    老子》以“道”解释宇宙万物的演变，以为“道生一，一生二，二生三，三生万物”，“道”乃“夫莫之命（命令）而常自然”，因而“人法地，地法天，天法道，道法自然”。“道”为客观自然规律，同时又具有“独立不改，周行而不殆”的永恒意义。《老子》书中包括大量朴素辩证法观点，如以为一切事物均具有正反两面，“反者道之动”，并能由对立而转化，“正复为奇，善复为妖”，“祸兮福之所倚，福兮祸之所伏”。又以为世间事物均为“有”与“无”之统一，“有、无相生”，而“无”为基础，“天下万物生于有，有生于无”。“天之道，损有余而补不足，人之道则不然，损不足以奉有馀”；“民之饥，以其上食税之多”；“民之轻死，以其上求生之厚”；“民不畏死，奈何以死惧之？”。其学说对中国哲学发展具深刻影响，其内容主要见《老子》这本书。他的哲学思想和由他创立的道家学派，不但对我国古代思想文化的发展，作出了重要贡献，而且对我国2000多年来思想文化的发展，产生了深远的影响。
+
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="part">
+              <div class="partmain text leftsilde">
+				  <img src="../images/音乐/音乐转盘.png" alt="" class="imgwx">
+                <img src="../images/gudaiimg/文心雕龙.jpg" alt="" id="imgwx" class="imgwx">
+                <div class="maskwx">
+                  <p>
+                    《文心雕龙》是中国南朝文学理论家刘勰（xié）创作的一部理论系统、结构严密、论述细致的文学理论专著，成书于公元501～502年（南朝齐和帝中兴元、二年）间。它是中国文学理论批评史上第一部有严密体系的、“体大而虑周”（章学诚《文史通义•诗话篇》）的文学理论专著。 刘勰《文心雕龙》的命名来自于环渊的著作《琴》。其解《序志》云：“夫文心者言为文之用心也，昔涓子（环渊）《琴心》，王孙巧心，心哉美矣，故用之焉。”<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    该全书共10卷，50篇（原分上、下部，各25篇），以孔子美学思想为基础，认为道是文学的本源，圣人是文人学习的楷模，“经书”是文章的典范。把作家创作个性的形成归结为“才”、“气”、“学”、“习”四个方面。《文心雕龙》还系统论述了文学的形式和内容、继承和革新的关系，又在探索研究文学创作构思的过程中，强调指出了艺术思维活动的具体形象性这一基本特征，并初步提出了艺术创作中的形象思维问题；对文学的艺术本质及其特征有较自觉的认识，开研究文学形象思维的先河。全面总结了齐梁时代以前的美学成果，细致地探索和论述了语言文学的审美本质及其创造、鉴赏的美学规律。
+                    
+
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="part">
+              <div class="partmain text">
+				  <img src="../images/音乐/音乐转盘.png" alt="" class="imgey">
+                <img src="../images/gudaiimg/尔雅.jpg" alt="" id="imgey" class="imgey">
+                <div class="maskey">
+                  <p>
+                    《尔雅》是辞书类文学作品，最早收录于《汉书•艺文志》，但未载作者姓名。作品中收集了比较丰富的古汉语词汇。它不仅是辞书之祖，还是典籍——经，被列入《十三经》中。是汉族传统文化的核心组成部分。<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    《尔雅》是第一部词典，“尔”是“近”的意思（后来写作“迩”），“雅”是“正”的意思，在这里专指“雅言”，即在语音、词汇和语法等方面都合乎规范的标准语。《尔雅》的意思是接近、符合雅言，即以雅正之言解释古汉语词、方言词，使之近于规范。《尔雅》全书收录4300多个词语按义类编排,计2091个条目,是中国辞书之祖。本20篇，现存19篇。它大约是秦汉间的学者缀缉先秦各地的诸书旧文，递相增益而成的。这些条目按类别分为“释诂”、“释言”、“释训”、“释亲”、“释宫”、“释器”、“释乐（yuè）”、“释天”、“释地”、“释丘”、“释山”、“释水”、“释草”、“释木”、“释虫”、“释鱼”、“释鸟”、“释兽”、“释畜（chù）”等19篇。
+
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <p>Copyright Song Shiwei group 2021　　</p>
+        <p>本网站所有资源均来自互联网 如有侵犯联系必删 </p>
+    </footer>
+    
+<script type='text/javascript'>
+const mini = new APlayer({
+            element: document.getElementById('player-mini'),
+            mini: true,
+            audio: [{
+                name: 'Jar Of Love',
+                artist: '曲婉婷',
+                url: '../music/musicxianh/许巍 - 时光.mp3',
+                cover: '../images/musicxianzh/sg.jpg',
+            }]
+        });
+</script>
+
+    <script type="text/javascript">
+	  var tabs=document.getElementsByClassName("tabss");
+	  var bats=document.getElementsByClassName("boxsx");
+	  for(var i=0;i<tabs.length;++i){
+		  tabs[i].onclick=function(){
+			  for(var i=0;i<bats.length;++i){
+				  if(tabs[i]==this){
+					  bats[i].classList.add("showing");
+				  }else{
+					  bats[i].classList.remove("showing");
+				  }
+			  }
+		  }
+	  }
+      $(function(){
+          $(".list:first").slideDown("slow");
+          
+          $(".menu div").click(function(){
+    		  $(this).next().slideDown("slow").parent().siblings().children('.list').slideUp("slow");
+    	  });
+        $(".list li a").click(function(){
+          $(".lists:first").children(".list").stop().slideToggle();
+        })
+      })
+    </script>
+</body>
+
+</html>
